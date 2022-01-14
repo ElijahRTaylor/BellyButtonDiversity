@@ -10,10 +10,11 @@
 </head>
 
 <body>
-
+<!-- Added Custom Image to jumbotron -->
   <div class="container">
     <div class="row">
-      <div class="col-md-12 jumbotron text-center">
+      <div class="col-md-12 jumbotron text-center"
+      style="background-image: url(image/Cartoon.png);">
         <h1>Belly Button Biodiversity Dashboard</h1>
         <p>Use the interactive charts below to explore the dataset</p>
       </div>
@@ -34,15 +35,28 @@
       </div>
       <div class="col-md-5">
         <div id="bar"></div>
+        <h6>*Please note some samples did not contain 10 different bacteria cultures</h6>
       </div>
       <div class="col-md-5">
         <div id="gauge"></div>
+        <h6>*Please note some samples did not report their weekly washing frequency</h6>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
         <div id="bubble"></div>
+        <h6>*Circle Images were meant to scale</h6>
       </div>
+    </div>
+    <!-- Adding Paragraph Explaining Purpose Of Dashboard -->
+    <div class="row">
+      <div class= "col-md-12">
+        <p>This interactive dashboard has been created so that the results from our BellyButton experiment can be viewed by the researchers as well as the participants.  
+          The subjects are left anonymous by using their Subject ID Number.  With each participant, this dashboard will display their Ethnicity, Gender, Age, Location, BBTYPE, and their washing frequency.
+          The charts on this dashboard will show the top 10 bacteria found in their Bellybutton, their washing frequency, as well show the various bacter cultures found in their bellybuttons.
+        </p>
+      </div>
+
     </div>
   </div>
 

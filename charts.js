@@ -121,7 +121,7 @@ function buildCharts(_sample) {
       marker: {
         size: sample_values,
         color: otu_ids,
-        colorscale: "Greens"
+        colorscale: "Blackbody"
       }
 
     };
@@ -142,7 +142,19 @@ function buildCharts(_sample) {
       value: washingfreq,
       title: { text: "Washing Frequency"},
       type: "indicator",
-      mode: "gauge+number"
+      mode: "gauge+number",
+      gauge: {
+        axis: { range: [null, 10], tickwidth: 1, tickcolor: "black" },
+        bar: {color: "black"},
+        steps: [
+          { range: [0, 2], color: "red" },
+          { range: [2, 4], color: "orange" },
+          { range: [4, 6], color: "yellow"},
+          { range: [6, 8], color: "yellowgreen"},
+          { range: [8, 10], color: "darkgreen"} 
+        ]
+      }
+
     };
 
     var gaugeData = [trace1];
